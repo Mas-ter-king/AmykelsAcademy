@@ -1,0 +1,250 @@
+:root{
+  --primary: darkred;
+  --secondary: white;
+  --tertiary: black;
+  --occupation: gray;
+}
+body {
+  margin: 0px 100px;
+  border-top: 30px solid var(--primary);
+  /* border-bottom: 10px solid rgb(43, 1, 1); */
+  border-radius: 20px;
+}
+
+.logoimage {
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 30px;
+}
+.logoimage img{
+  transition: 3s;
+  transition-duration: 5s;
+}
+.logoimage img:hover{
+  width: 300px;
+  font-size: 40px;
+  transform: scale(1.4, 1.4);
+}
+/* navigation menu */
+nav {
+  background-color: var(--primary);
+  margin: 0px 0px 10px;
+}
+
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.logo {
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  
+}
+.logo img{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+}
+  
+.menu ul > li {
+  display: inline;
+  padding: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+}
+.menu ul li a:hover {
+  color: cyan;
+  background-color: var(--tertiary);
+  padding: 0.09;
+  transition: background-color 0.5s;
+}
+.menu ul li a:active {
+  color: green;
+}
+
+/* this flex, the immediate section after navigation  */
+.flex {
+  background-color: var(--primary);
+  padding: 20px;
+  font-family: cursive;
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.flex > div {
+  color: teal;
+  width: 100%;
+  height: 51vh;
+  margin: 5px;
+  text-align: center;
+  background-image: url(writeupimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+.flex div:hover {
+  color: white;
+  background: transparent;
+}
+
+/* this section contains the image and a little write-up about the CEO */
+section {
+  background-color: var(--primary);
+  margin-top: 100px;
+  padding: 1px 5px;
+}
+section .theceo {
+  background-color: white;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  padding: 1px;
+}
+section .theceo p .p2 {
+  height: 200px;
+  width: 100px;
+  padding: 50px;
+}
+section .theceo .p2 {
+  padding-left: 50px;
+}
+
+/* this is the shop us option below our home page */
+.shop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  background-color: var(--primary);
+  margin-top: 150px;
+}
+.shop > div {
+  margin: 5px 0px;
+}
+.shop .writeup-shop {
+  background-color: white;
+  padding: 30px;
+}
+.btn {
+  background-color: var(--primary);
+  padding: 0.45rem 0.65rem;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.btn:hover {
+  color: cyan;
+}
+
+/* .testimonial section*/
+.testimonials {
+  display: flex;
+  background-color: silver;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+.terstimonials-colums > img {
+  border-radius: 50px;
+}
+.terstimonials-colums > p {
+  padding: 10px;
+}
+
+/* footer*/
+.footer {
+  display: flex;
+  background-color: var(--primary);
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 200px;
+  color: white;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.footer-next p a {
+  text-decoration: none;
+  color: white;
+ 
+}
+.footer-next p a:hover {
+  color: cyan; 
+  background-color: var(--tertiary);
+  transition: background-color 0.5s; 
+}
+.copyright {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+  /* margin-bottom: 150px; */
+  margin-top: 0px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.footer .footer-column a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+/* .fa:hover {
+          opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      } */
+
+/* Responsiveness */
+@media screen and (max-width: 480px) {
+  nav .navbar {
+    display: block;
+  }
+  /* .flex{
+            flex-direction: column;
+        } */
+}
+
+@media screen and (max-width: 768px) {
+  nav .navbar {
+    display: block;
+  }
+  .flex {
+    flex-direction: column;
+  }
+}
